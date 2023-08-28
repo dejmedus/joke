@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #6dff74;
+}
+
+.left {
+  color: rgb(97, 234, 255);
+  transform: skew(0deg, -15deg);
+  text-shadow: -10px -10px 0 rgba(154, 54, 255, 0.8);
+}
+.right {
+  color: rgb(255, 247, 10);
+  transform: skew(0deg, 15deg);
+  text-shadow: -10px -10px 0 rgba(255, 0, 0, 0.8);
+}
+.left .content {
+  text-align: center;
+  transform: translate(15vw);
+}
+.right .content {
+  text-align: center;
+  transform: translate(-15vw);
+}
+span {
+  display: inline-block;
+  font-family: "Comic Neue", cursive;
+  font-size: 10vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.8;
+  transition: ease-out 0.6s;
+}
+
+.popup {
+  position: absolute;
+  z-index: 9999;
+}
