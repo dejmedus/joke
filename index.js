@@ -37,15 +37,20 @@ setInterval(() => {
 }, 1000);
 
 // text animation
-const spansSlow = document.querySelectorAll(".span");
+const rightSlow = document.querySelectorAll(".span");
+const leftSlow = document.querySelectorAll(".leftSpan");
 
 window.addEventListener("scroll", handleScroll);
 
 function handleScroll() {
   const scrollPosition = window.scrollY;
 
-  spansSlow.forEach((span) => {
+  rightSlow.forEach((span) => {
     const translation = scrollPosition / 2;
     span.style.transform = `translateX(${translation}px)`;
+  });
+  leftSlow.forEach((span) => {
+    const translation = scrollPosition / 2;
+    span.style.transform = `translateX(-${translation}px)`;
   });
 }
