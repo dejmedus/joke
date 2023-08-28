@@ -41,6 +41,7 @@ const rightSlow = document.querySelectorAll(".span");
 const leftSlow = document.querySelectorAll(".leftSpan");
 
 window.addEventListener("scroll", handleScroll);
+window.onscroll = handleScroll;
 
 function handleScroll() {
   const scrollPosition = window.scrollY;
